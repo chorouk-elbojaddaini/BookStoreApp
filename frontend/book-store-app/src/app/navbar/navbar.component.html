@@ -1,0 +1,25 @@
+<div class="navbar">
+  <a class="navbar-logo" href="#">
+    <img src="../../assets/images/logoImg.jpg" alt="My Logo">
+  </a>
+  <div class="navLinks" [class.is-open]="isMenuOpen">
+    <ul>
+      <li ><a class="navlink" href="#">Home</a></li>
+      <li ><a class="navlink" href="#">Books</a></li>
+      <li ><a class="navlink" href="#">Authors</a></li>
+      <li ><a class="navlink" href="#">Categories</a></li>
+      <li ><a class="navlink" href="#">About</a></li>
+    </ul>
+  </div>
+  <div class="user-funct">
+    <a><i class="fa-solid fa-heart"></i></a>
+    <a><i class="fa-solid fa-cart-shopping"></i></a>
+    <a><i class="fa-solid fa-user"></i></a>
+    <div class="burger" (click)="toggleMenu()">
+      <i  *ngIf="isMenuOpen" class="fa-solid fa-xmark"></i>
+      <i *ngIf="!isMenuOpen" class="fa-solid fa-bars"></i>
+     </div>
+  </div>
+  
+   
+</div>
