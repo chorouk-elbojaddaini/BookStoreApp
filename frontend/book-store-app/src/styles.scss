@@ -12,3 +12,62 @@ font-family: 'Poppins', sans-serif;
 
 
 }
+
+
+
+
+
+
+//   .owl-item {
+//     background-color: #d61010;
+//     padding: 20px;
+//     margin: 15px;
+//     text-align: center;
+    
+//   }
+
+
+.carousel-container {
+   width: calc(100vw - 50px);
+    margin: 25px auto;
+    padding: 5px;
+    justify-content: center;
+  }
+  
+  .owl-carousel .owl-stage {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  
+  .slide {
+    background-color: #eee;
+    padding: 0px;
+    text-align: center;
+    font-size: 18px;
+   
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  
+  .owl-item{
+    margin-right: 5px !important;
+  }
+  
+
+  .owl-next , .owl-prev{
+    background: var(--blue) !important;
+    color: #ffffff !important;
+    position: absolute;
+    top: 35%;
+    width: 22px;
+    height: 20px;
+    border-radius: 50%;
+  }
+
+  .owl-next{
+    right: -15px;
+  }
+  .owl-prev{
+    left: -15px;
+  }

@@ -13,7 +13,16 @@
   </div>
   <div class="user-funct">
     <a><i class="fa-solid fa-heart"></i></a>
-    <a><i class="fa-solid fa-cart-shopping"></i></a>
+    <a class="cart-shop"><i class="fa-solid fa-cart-shopping"></i>
+      <div class="cart-list">
+        <span class="cart-title">The cart</span>
+        <span>There are no products in the cart</span>
+        <!-- <ul>
+          <li>Book 1</li>
+          <li>Book 2</li>
+          <li>Book 3</li>
+        </ul> -->
+      </div></a>
     <a><i class="fa-solid fa-user"></i></a>
     <div class="burger" (click)="toggleMenu()">
       <i  *ngIf="isMenuOpen" class="fa-solid fa-xmark"></i>
