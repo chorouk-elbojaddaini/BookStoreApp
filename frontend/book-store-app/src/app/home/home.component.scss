@@ -37,7 +37,26 @@
     height: 100%;
     object-fit: cover;
     border-radius: 5px;
+    
    
+  }
+
+
+  .cart-one{
+    background: linear-gradient(rgba(184, 64, 94,0.3), rgba(184, 64, 94,0.3)), url('../../assets/images/kidRead.jpg') center/cover no-repeat, #ffffff;
+
+  }
+  .cart-two{
+    background: linear-gradient(rgba(184, 64, 94,0.3), rgba(184, 64, 94,0.3)), url('../../assets/images/englishB.jpg') center/cover no-repeat, #ffffff;
+
+  }
+  .cart-three{
+    background: linear-gradient(rgba(184, 64, 94,0.3), rgba(184, 64, 94,0.3)), url('../../assets/images/french.jpg') center/cover no-repeat, #ffffff;
+
+  }
+  .cart-four{
+    background: linear-gradient(rgba(184, 64, 94,0.3), rgba(184, 64, 94,0.3)), url('../../assets/images/arabic.jpg') center/cover no-repeat, #ffffff;
+
   }
   
   .cart h3 {

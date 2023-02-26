@@ -1,20 +1,20 @@
 <section class="home">
     <app-heading></app-heading>
     <div class="cart-book">
-        <div class="cart">
-          <img src="../../assets/images/book2.jpg" alt="Image 1">
+        <div class="cart cart-one">
+          
           <h3>Kids books</h3>
         </div>
-        <div class="cart">
-          <img src="../../assets/images/book1-new.jpg" alt="Image 2">
+        <div class="cart cart-two">
+          
           <h3>English books</h3>
         </div>
-        <div class="cart">
-          <img src="../../assets/images/book3-new.jpg" alt="Image 3">
+        <div class="cart cart-three">
+          
           <h3>French books</h3>
         </div>
-        <div class="cart">
-          <img src="../../assets/images/book4.jpg" alt="Image 4">
+        <div class="cart cart-four">
+         
           <h3>Arabic books</h3>
         </div>
       </div>
@@ -22,24 +22,6 @@
       <div class="best-sales">
         <h3>Best sellers</h3>
         
-        <!-- <div class="carousel-container">
-          <owl-carousel-o [options]="customOptions">
-            <ng-template carouselSlide>Slide 1</ng-template>  
-            <ng-template carouselSlide>Slide 2</ng-template>  
-            <ng-template carouselSlide>Slide 3</ng-template>  
-            <ng-template carouselSlide>Slide 4</ng-template>  
-            <ng-template carouselSlide>Slide 5</ng-template>  
-            <ng-template carouselSlide>Slide 6</ng-template>  
-            <ng-template carouselSlide>Slide 7</ng-template>  
-          </owl-carousel-o>
-        </div> -->
-        <!-- <div class="container">
-          <owl-carousel-o [options]="customOptions">
-            <ng-template *ngFor="let item of items">
-              <div class="item">{{ item }}</div>
-            </ng-template>
-          </owl-carousel-o>
-        </div> -->
         <div class="carousel-container">
           <owl-carousel-o [options]="customOptions" >
             <ng-container *ngFor="let slide of slides">
