@@ -7,13 +7,15 @@ import { HomeComponent } from './home/home.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeadingComponent } from './heading/heading.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     HomeComponent,
-    HeadingComponent
+    HeadingComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
