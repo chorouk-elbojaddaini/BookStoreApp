@@ -6,6 +6,8 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
+  isClicked = false;
+  isAdded = false;
   // items = ['Item 1', 'Item 2', 'Item 3', 'Item 4', 'Item 5'];
   // customOptions: OwlOptions = {
   //   loop: true,
@@ -34,32 +36,32 @@ export class HomeComponent {
   slides = [
     {
       title: 'Slide 1',
-      image: '../../assets/images/library1.jpg',
+      image: '../../assets/images/71dp6.jpg',
       alt: 'Slide 1'
     },
     {
       title: 'Slide 2',
-      image: '../../assets/images/library1.jpg',
+      image: '../../assets/images/71eCvw1IqUL.jpg',
       alt: 'Slide 2'
     },
     {
       title: 'Slide 3',
-      image: '../../assets/images/library1.jpg',
+      image: '../../assets/images/71eCvw1IqUL.jpg',
       alt: 'Slide 3'
     },
     {
       title: 'Slide 4',
-      image: '../../assets/images/library1.jpg',
+      image: '../../assets/images/71eCvw1IqUL.jpg',
       alt: 'Slide 4'
     },
     {
       title: 'Slide 5',
-      image: '../../assets/images/library1.jpg',
+      image: '../../assets/images/71eCvw1IqUL.jpg',
       alt: 'Slide 5'
     },
     {
       title: 'Slide 6',
-      image: '../../assets/images/library1.jpg',
+      image: '../../assets/images/71eCvw1IqUL.jpg',
       alt: 'Slide 6'
     }
   ];
@@ -81,10 +83,21 @@ export class HomeComponent {
         nav: false
       },
       1000: {
-        items: 3
+        items: 5,
+        nav:true
       }
     }
   };
+
+
+  toggleHeart() {
+    this.isClicked = !this.isClicked;
+  }
+  
+
+  toggleCart() {
+    this.isAdded = !this.isAdded;
+  }
 }
 
 

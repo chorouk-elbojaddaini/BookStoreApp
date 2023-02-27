@@ -18,7 +18,7 @@ a{
 
 .carousel-container {
    width: calc(100vw - 50px);
-    margin: 25px auto;
+    margin: 15px auto;
     padding: 5px;
     justify-content: center;
   }
@@ -27,16 +27,20 @@ a{
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
+    gap: 5px;
   }
   
   .slide {
-    background-color: #eee;
-    padding: 0px;
+    padding: 15px;
     text-align: center;
     font-size: 18px;
    
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-right: 5px;
+    margin-left: 22px;
+  }
+
+  .slide img{
+    width: 50px;
   }
   
   .owl-item{

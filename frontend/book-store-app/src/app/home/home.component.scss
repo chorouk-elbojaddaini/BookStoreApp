@@ -143,9 +143,136 @@ border-radius: 0.2rem;
     max-width: 800px;
     margin: 0 auto;
   }
-  .item {
-    background-color: #eee;
-    padding: 20px;
+  .title {
     text-align: center;
-    font-size: 36px;
+    position: relative;
   }
+  
+  .line {
+    border-top: 1px solid #ccc;
+    position: absolute;
+    width: 100%;
+  }
+  
+  .top {
+    top: 0;
+  }
+  
+  .bottom {
+    bottom: 0;
+  }
+  
+  .title h3 {
+    display: inline-block;
+    padding: 0 20px;
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--blue);
+    background-color: #fff;
+  }
+  
+  .title h3:before,
+  .title h3:after {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: #ccc;
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+  
+  .title h3:before {
+    top: -10px;
+  }
+  
+  .title h3:after {
+    bottom: -10px;
+  }
+  
+
+.slide{
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 420px;
+ 
+
+}
+.slide img{
+  width: 150px;
+  height: 246px;
+}
+.slide .title-book{
+  margin-top: 15px;
+}
+.slide .category{
+  color: var(--blue);
+}
+.slide .price{
+  margin-bottom: 25px;
+}
+.slide a{
+  text-decoration: none;
+  border: 1px solid var(--pink);
+  color: aliceblue;
+  background: var(--pink);
+  margin-right: 25px;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 15px;
+
+}
+.add-to-basket button,.like button{
+  margin-right: 5px;
+  background: transparent;
+  border: none;
+  font-size: 22px;
+  color: var(--pink);
+ 
+}
+
+
+/*=================Reviews PART====================*/
+.reviews{
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.review{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+  width: 300px;
+    height: auto;
+    padding: 25px;
+    margin-bottom: 80px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.review:hover{
+  transform: translateY(-2%);
+}
+.review img{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  
+}
+.review h3{
+  color: var(--pink);
+}
+.fa-star{
+  color: var(--blue);
+}
