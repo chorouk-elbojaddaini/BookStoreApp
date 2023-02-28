@@ -70,6 +70,10 @@ export class HomeComponent {
     loop: true,
     margin:10,
     nav: true,
+    mouseDrag: true,
+    touchDrag: true,
+    pullDrag: false,
+    dots: false,
     navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>'],
     rewind: false, // disable rewind
     responsiveClass: true,
