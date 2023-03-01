@@ -4,8 +4,8 @@
   </a>
   <div class="navLinks" [class.is-open]="isMenuOpen">
     <ul>
-      <li ><a class="navlink" href="#">Home</a></li>
-      <li ><a class="navlink" href="#">Books</a></li>
+      <li ><a class="navlink" [routerLink]="home">Home</a></li>
+      <li ><a class="navlink" [routerLink]="books">Books</a></li>
       <li ><a class="navlink" href="#">Authors</a></li>
       <li ><a class="navlink" href="#">Categories</a></li>
       <li ><a class="navlink" href="#">Reviews</a></li>

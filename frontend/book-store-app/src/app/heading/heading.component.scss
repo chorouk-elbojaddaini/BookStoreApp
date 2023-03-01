@@ -1,3 +1,21 @@
+.header-title h2{
+    width: 700px;
+    font-size: 34px;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    background: url(../../assets/images/back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite ;
+}
+
+@keyframes back {
+    100%{
+        background-position: 2000px 0;
+    }
+    
+}
+
 
 .content-search{
     display: flex;
@@ -6,36 +24,57 @@
     background: linear-gradient(rgba(184, 64, 94,0.4), rgba(184, 64, 94,0.4)), url('../../assets/images/library1.jpg') center/cover no-repeat, #ffffff;
    color: aliceblue;
   height: calc(100vh - 65px);
-  width: 100%;
+  width: auto;
   align-items: center;
   text-align: center;
   justify-content: center;
   
 }
 .search-form{
-    background: rgba(255,255,255,0.4);
+    background: rgba(255, 255, 255,0.2);
     padding: 2rem;
     border-radius: 0.2rem;
-    width:35%;
+    width:45%;
     box-sizing:border-box;
 }
-
+.search-form h3{
+    font-weight: 700;
+    font-size: 20px;
+}
 .search-form input{
-    background: rgba(255,255,255,0.5);
+    background: rgba(255, 255, 255,0.8);
     border: none;
     border-radius: 0.2rem;
-    padding: 5px;
+    padding: 7px;
     margin: 15px;
     width: 70%;
-    color: aliceblue;
+    color: rgb(0, 0, 0);
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+
+}
+.search-form input::placeholder{
+    color: var(--blue);
+}
+
+.search-form input:active{
+    outline-style: hidden;    
+
 }
 
 .search-form button{
-    padding: 4px;
+    padding: 6px;
     border-radius: 0.2rem;
    border: none;
    width: 20%;
+   font-size: 15px;
    color: aliceblue;
    background-color: #4CACBC;
+   cursor: pointer;
+   box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
     
+}
+
+.search-form button:hover{
+    background-color: #2d9fb3;
+    transform: scale(1.1);
 }
